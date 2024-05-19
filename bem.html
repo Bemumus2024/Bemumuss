@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM UMUS 2024</title>
+    <link rel="stylesheet" href="stylese.css">
+    
+</head>
+<body>
+    <header class="header">
+        <h1>Welcome to BEM UMUS Website information</h1>
+    </header>
+    <section class="parallax" id="section1">
+        <div class="content">
+            <h2>Section 1</h2>
+            <p>This is the first section with parallax effect.</p>
+        </div>
+    </section>
+    <section class="content-section">
+        <h2>Content Section</h2>
+        <p>This is a normal content section.</p>
+    </section>
+    <section class="parallax" id="section2">
+        <div class="content">
+            <h2>Section 2</h2>
+            <p>This is the second section with parallax effect.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Footer Content</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            gsap.from('.content h2', { duration: 1, y: -50, opacity: 0 });
+            gsap.from('.content p', { duration: 1, y: 50, opacity: 0, delay: 0.5 });
+        });
+        
+    </script>
+</body>
+
+</html>

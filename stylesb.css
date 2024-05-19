@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  main .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  main section {
+    background: rgba(255, 255, 255, 0.9);
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+  }
+  
+  main h2 {
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Ocean Waves Background */
+  .ocean {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #0099ff;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .wave {
+    position: absolute;
+    bottom: 0;
+    width: 200%;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0.5;
+    border-radius: 50%;
+    animation: wave-animation 4s infinite linear;
+  }
+  
+  .wave:nth-child(2) {
+    animation: wave-animation 4s infinite linear;
+    animation-delay: 2s;
+    opacity: 0.6;
+  }
+  
+  @keyframes wave-animation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
